@@ -24,19 +24,29 @@ Descrição das colunas:
 C/A,UNIT,SCP,STATION,LINENAME,DIVISION,DATE,TIME,DESC,ENTRIES,EXITS
 
 C/A      = Agrupamento de catracas de que a catraca faz parte (_Control Area_)
+
 UNIT     = Cabine de controle associada à estação onde a catraca se encontra (_Remote Unit for a station_)
+
 SCP      = Endereço específico da catraca (_Subunit Channel Position_)
+
 STATION  = Nome da estação onde a catraca se encontra
+
 LINENAME = Código representando todas linhas que passam na estação*
+
 DIVISION = Código representando a concessionária original da linha, antes da prefeitura assumir a gestão   
+
 DATE     = Representa a data (no formato MM-DD-YY) do evento de auditoria agendado
+
 TIME     = Representa o horário (hh:mm:ss) do evento de auditoria agendado
+
 DESc     = Descreve o tipo de evento de auditoria registrado:
            1. "REGULAR" representando um evento de auditoria padrão, em que a contagem é feita a cada 4 horas
            2. "RECOVR AUD" significa que o valor específico estava perdido, mas foi recuperado posteriormente 
            3. Diversos códigos sinalizam situações em que auditorias são mais frequentes devido a atividades de
               planejamento ou solução de problemas. 
+              
 ENTRIES  = A contagem cumulativa de entradas associadas à catraca desde o último registro
+
 EXITS    = A contagem cumulativa de saídas associadas à catraca desde o último registro
 
 *  Normalmente as linhas são representadas por um caractere. LINENAME 456NQR significa que os trens 4, 5, 6, N, Q e R passam pela estação.
